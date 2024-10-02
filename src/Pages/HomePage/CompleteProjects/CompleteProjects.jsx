@@ -1,5 +1,7 @@
 import React from "react";
 import Hospital from "/src//Pages//HomePage/image/Hospital.png";
+
+
 const CompleteProjects = () => {
   return (
     <div className="bg-red-100 w-full py-10 px-5">
@@ -39,7 +41,7 @@ const CompleteProjects = () => {
         </div>
         <div className="card lg:card-side bg-base-100 shadow-xl">
           <figure>
-            <img src="" alt="Album" />
+            <img src={Hospital} alt="Album" />
           </figure>
           <div className="card-body">
             <h2 className="card-title text-3xl font-bold text-secondary">
