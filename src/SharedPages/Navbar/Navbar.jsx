@@ -47,16 +47,16 @@ const Navbar = () => {
                     </label>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-red-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <Link to={"/"}><li><a>Home</a></li></Link>
-                        <Link to={"/about"}><li><a>About</a></li></Link>
-                        <Link to={"/service"}> <li><a>Service</a></li></Link>
+                        className="menu menu-sm dropdown-content bg-red-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  font-bold">
+                        <Link to={"/"}><li><a className='text-sm'>Home</a></li></Link>
+                        <Link to={"/about"}><li><a className='text-sm'>About</a></li></Link>
+                        <Link to={"/service"}> <li><a className='text-sm'>Service</a></li></Link>
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-xl">Mozammel <span>Hosen</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 text-xl font-bold">
                     <Link to={"/"}><li><a>Home</a></li></Link>
                     <Link to={"/about"}><li><a>About</a></li></Link>
                     <Link to={"/service"}> <li><a>Service</a></li></Link>

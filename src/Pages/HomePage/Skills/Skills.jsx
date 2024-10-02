@@ -4,7 +4,7 @@ const SKills = () => {
     return (
         <div>
             <div className='my-10'>
-                <h2 className="text-center text-secondary text-3xl font-bold">My SKills</h2>
+                <h2 className="text-center text-secondary text-4xl font-bold my-2">My SKills</h2>
                 <p className='text-center text-xl font-semibold'>Skills on Web Development!</p>
             </div>
             <div className='flex justify-between items-center mx-20'>
