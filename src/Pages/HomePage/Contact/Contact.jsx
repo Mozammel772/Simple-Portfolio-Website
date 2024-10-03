@@ -1,35 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 // import { send } from 'emailjs-com';
 
 const Contact = () => {
-  const [toSend, setToSend] = useState({
-    from_name: "",
-    to_name: "",
-    message: "",
-    reply_to: "",
-  });
+  // const [toSend, setToSend] = useState({
+  //   from_name: "",
+  //   to_name: "",
+  //   message: "",
+  //   reply_to: "",
+  // });
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    send("service_1zrsdib", "template_vqmf3f7", toSend, "ij9VhyMOi7XwvARkk")
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED...", err);
-      });
-  };
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  //   send("service_1zrsdib", "template_vqmf3f7", toSend, "ij9VhyMOi7XwvARkk")
+  //     .then((response) => {
+  //       console.log("SUCCESS!", response.status, response.text);
+  //     })
+  //     .catch((err) => {
+  //       console.log("FAILED...", err);
+  //     });
+  // };
 
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setToSend({ ...toSend, [e.target.name]: e.target.value });
+  // };
 
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
-            <form onSubmit={onSubmit}>
+          {/* onSubmit={onSubmit} */}
+            <form >
               <div className="form-control mt-3">
                 <label className="label">
                   <span className="label-text">From Name</span>
@@ -39,8 +40,8 @@ const Contact = () => {
                   type="text"
                   name="from_name"
                   placeholder="from name"
-                  value={toSend.from_name}
-                  onChange={handleChange}
+                  // value={toSend.from_name}
+                  // onChange={handleChange}
                 />
               </div>
               <div className="form-control mt-3">
@@ -52,8 +53,8 @@ const Contact = () => {
                   type="text"
                   name="to_name"
                   placeholder="to name"
-                  value={toSend.to_name}
-                  onChange={handleChange}
+                  // value={toSend.to_name}
+                  // onChange={handleChange}
                 />
               </div>
               <div className="form-control mt-3">
@@ -65,8 +66,8 @@ const Contact = () => {
                   type="text"
                   name="reply_to"
                   placeholder="Your email"
-                  value={toSend.reply_to}
-                  onChange={handleChange}
+                  // value={toSend.reply_to}
+                  // onChange={handleChange}
                 />
               </div>
               <div className="form-control mt-3">
@@ -78,8 +79,8 @@ const Contact = () => {
                   type="text"
                   name="message"
                   placeholder="Your message"
-                  value={toSend.message}
-                  onChange={handleChange}
+                  // value={toSend.message}
+                  // onChange={handleChange}
                 />
               </div>
               <input
